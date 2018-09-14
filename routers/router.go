@@ -22,4 +22,6 @@ func init() {
 	})
 
 	beego.Router("/welcome", &controllers.WelcomeController{})
+
+	beego.Include(&controllers.AnnotationController{})
 }
