@@ -29,6 +29,14 @@ func (c *AnnotationController) URLMapping() {
 // @router /antest/:key [get]
 func (this *AnnotationController) Antest() {
 	this.Ctx.Output.Body([]byte("annotation controller"))
+
+	//session使用
+	//v := this.GetSession("sess")
+	//if v == nil {
+	//	this.SetSession("sess", int(1))
+	//} else {
+	//	this.SetSession("sess", v.(int)+1)
+	//}
 }
 
 // @router /jsontest/:key [post]
